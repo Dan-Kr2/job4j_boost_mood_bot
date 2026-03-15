@@ -1,4 +1,4 @@
-package ru.job4j.four;
+package ru.job4j.repository;
 
 public class UserRepository {
 }

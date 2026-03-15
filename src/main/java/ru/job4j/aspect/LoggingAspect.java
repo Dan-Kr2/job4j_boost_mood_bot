@@ -1,4 +1,4 @@
-package ru.job4j.five;
+package ru.job4j.aspect;
 
 public class LoggingAspect {
 }
