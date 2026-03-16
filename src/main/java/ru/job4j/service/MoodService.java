@@ -2,8 +2,19 @@ package ru.job4j.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.stereotype.Component;
 
-public class MoodService {
+@Component
+public class MoodService implements BeanNameAware {
+
+    private String myBeanName;
+
+    @Override
+    public void setBeanName (String name) {
+        this.myBeanName = name;
+        System.out.println(myBeanName);
+    }
 
     @PostConstruct
     public void init() {
